@@ -1,0 +1,93 @@
+body{
+    background: url("bg.jpg");
+    background-size:  100%;
+    background-repeat: round;
+    background-attachment: fixed;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+form{
+    position: absolute;
+    right: 300px;
+    top: 100px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#ovr
+{
+    z-index: -1;
+    background-color: rgba(56, 92, 89, 0.466);
+    height: 752px;
+    width: 550px;
+    position:absolute;
+    right: 0px;
+    
+}
+input[type=text]
+{
+    background-color: rgba(240, 248, 255, 0.11);
+    margin: 25px 25px 25px 0px;
+    border: none;
+    width: 50%;
+    /* box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.473); */
+    padding: 7px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 100%;
+}
+input[type=password]
+{
+    background-color: rgba(240, 248, 255, 0.11);
+    margin: 25px 25px 25px 0px;
+    border: none;
+    width: 50%;
+    /* box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.473); */
+    padding: 7px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=password]:focus {
+    width: 100%;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #056114cc;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px 5px 5px 0px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
